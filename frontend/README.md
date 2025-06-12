@@ -1,8 +1,8 @@
-# Restaurant Reservation Management Application
+# Restaurant Reservation Application
 
 ## Overview
 
-The Restaurant Reservation Management Application is a web-based application designed to facilitate the management of restaurant reservations. It allows users to create reservations, view existing reservations, and leave comments regarding their experiences. The application is built using a backend powered by Express.js and a frontend developed with ReactJS.
+The Restaurant Reservation Application is a full-stack web application designed to manage restaurant reservations efficiently. It allows users to create reservations, view existing reservations, and leave comments on their experiences. The application is built using Express.js for the backend and React.js for the frontend.
 
 ## Project Structure
 
@@ -20,14 +20,14 @@ The project is organized into two main directories: `backend` and `frontend`.
     - `Reservation.js`: Defines the Reservation model.
     - `Table.js`: Defines the Table model.
     - `User.js`: Defines the User model.
-  - **routes**: Sets up the API routes for the application.
+  - **routes**: Sets up the API endpoints for the application.
     - `commentRoutes.js`: Routes for comment-related API endpoints.
     - `reservationRoutes.js`: Routes for reservation-related API endpoints.
     - `tableRoutes.js`: Routes for table-related API endpoints.
-  - `app.js`: The entry point of the backend application.
+  - `app.js`: Entry point of the backend application.
   - **config**: Contains configuration files.
     - `db.js`: Database configuration and connection logic.
-- `package.json`: Lists the dependencies and scripts for the backend project.
+- `package.json`: Lists dependencies and scripts for the backend project.
 - `README.md`: Documentation specific to the backend project.
 
 ### Frontend
@@ -37,25 +37,18 @@ The project is organized into two main directories: `backend` and `frontend`.
     - `AddReservation.js`: Component for adding a new reservation.
     - `ReservationList.js`: Component for displaying a list of reservations.
     - `CommentForm.js`: Component for submitting comments.
-  - `App.js`: The main entry point for the frontend application.
+  - `App.js`: Main entry point for the frontend application.
   - **api**: Contains functions for making API calls.
     - `reservationApi.js`: Functions for reservation-related API calls.
-- `package.json`: Lists the dependencies and scripts for the frontend project.
+- `package.json`: Lists dependencies and scripts for the frontend project.
 - `README.md`: Documentation specific to the frontend project.
-
-## Features
-
-- Create and manage reservations.
-- View reservations filtered by table.
-- Post comments related to reservations.
-- User-friendly interface built with ReactJS.
 
 ## Getting Started
 
 ### Prerequisites
 
 - Node.js and npm installed on your machine.
-- MongoDB or any other database of your choice for data storage.
+- MongoDB or any other database configured for the backend.
 
 ### Installation
 
@@ -65,13 +58,13 @@ The project is organized into two main directories: `backend` and `frontend`.
    cd restaurant-reservation-app
    ```
 
-2. Navigate to the backend directory and install dependencies:
+2. Install backend dependencies:
    ```
    cd backend
    npm install
    ```
 
-3. Navigate to the frontend directory and install dependencies:
+3. Install frontend dependencies:
    ```
    cd frontend
    npm install
@@ -93,10 +86,16 @@ The project is organized into two main directories: `backend` and `frontend`.
 
 The application should now be running on `http://localhost:3000` for the frontend and `http://localhost:5000` for the backend (or whichever port you have configured).
 
+## Features
+
+- Create and manage reservations.
+- View reservations filtered by table.
+- Leave comments on reservations.
+
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any enhancements or bug fixes.
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License.
